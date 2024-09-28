@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaCore Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="d-flex justify-content-between align-items-center p-3">
+            <div class="logo">
+                <img src="Assets/logo.png" alt="VitaCore Logo" width="150" class="img-fluid">
+            </div>
+            <nav class="nav">
+                <a class="nav-link active" href="#">Overview</a>
+                <a class="nav-link" href="/register.html">Book-Appointment</a>
+                <a class="nav-link" href="#">Patients</a>
+                <a class="nav-link" href="#">Lab</a>
+            </nav>
+            <div class="user-profile d-flex align-items-center">
+                <button class="btn btn-outline-primary">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="overview mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card p-3">
+                            <h5>Appointments</h5>
+                            <p>2</p>
+                            <p>Last appointment 1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3">
+                            <h5>Patient History</h5>
+                            <p>4 diseases</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3">
+                            <h5>Current Medication</h5>
+                            <p>12 from the last 2 years</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3">
+                            <h5>Family Doctor</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="patient-records mt-5">
+                <h3>Patient's Records</h3>
+                <h4>Shreya Sharma, 19</h4>
+
+                <div class="tabs mt-4">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Heart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brain</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kidney</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eyes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="record-content mt-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card p-3">
+                                <h5>CT Scan</h5>
+                                <img src="Assets/ctscan.svg" alt="CT Scan" class="img-fluid" width="1000px">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-3">
+                                <h5>ECG</h5>
+                                <img src="Assets/" alt="ECG" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-3">
+                                <h5>Foods to Avoid</h5>
+                                <p>Burgers, Fries, Pasta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutButton = document.querySelector('.btn-outline-primary');
+
+            if (logoutButton) {
+                logoutButton.addEventListener('click', function () {
+                    // Clear cookies or handle session termination if needed
+                    // Redirect to index.html
+                    window.location.href = 'index.html';
+                });
+            }
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

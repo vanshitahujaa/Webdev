@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+    color: #333;
+    margin-right: 15px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h5 {
+    color: #333;
+    font-weight: bold;
+}
+
+.record-content .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tabs .nav-tabs .nav-link {
+    border: 0;
+    color: #333;
+}
+
+.tabs .nav-tabs .nav-link.active {
+    border-bottom: 3px solid #007bff;
+}
+

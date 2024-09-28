@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - VitaCore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registeration.css">
+</head>
+
+<body>
+
+    
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Register</h2>
+            <form id="registerForm" action="/registeration" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div class="register-links">
+                <a href="/login.html">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

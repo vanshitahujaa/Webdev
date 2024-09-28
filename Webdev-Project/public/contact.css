@@ -1,0 +1,60 @@
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    color: #1e8e5e;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #1e8e5e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #166d4b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e8e5e;
+    color: white;
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+}

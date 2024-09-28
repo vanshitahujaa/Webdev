@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VitaCore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="Assets/logo.png" alt="VitaCore">
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a  href="/index.html"  class="active">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/register.html">Book-Appointment</a>
+                <a href="/blogs.html">Blogs</a>
+                <a href="/contact.html" class="navbar-contact">Contact US</a>
+                <a href="/login.html"   class="navbar-contact"   >Login</a>
+            </div>
+        </nav>
+
+    <main>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Please fill out the form below and we will get in touch with you shortly.</p>
+            <form action="submit_contact" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div><p>&copy; 2024 VitaCore. All rights reserved.</p></div>
+    </footer>
+
+    </div>
+</body>
+</html>

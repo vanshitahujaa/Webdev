@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of AYUSH - Patient Registration Portal</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="Assets/logo.png" alt="Logo">
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="medicalHistory">Medical History:</label>
+                <textarea id="medicalHistory" name="medicalHistory"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="preferredConsultation">Preferred Consultation Method:</label>
+                <select id="preferredConsultation" name="preferredConsultation" required>
+                    <option value="" disabled selected>Select a method</option>
+                    <option value="inPerson">In-Person</option>
+                    <option value="online">Online</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Book-Appointment">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
